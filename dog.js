@@ -7,8 +7,7 @@ class Dog {
   }
 
   present() {
-    return `My dog's ${this.name} and has ${this.age}.
-     ${this.name}'s breed is ${this.breed} and the color is ${this.color}`;
+    return `My dog's ${this.name} and he's ${this.age} yo. ${this.name}'s ${this.breed} and the color is ${this.color}`;
   }
 }
 export default Dog;
