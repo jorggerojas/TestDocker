@@ -1,7 +1,7 @@
-const express = require("express");
-const user = require("./user");
-const Dog = require("./dog");
-const math = require("./math");
+import express from "express";
+import user from "./user";
+import Dog from "./dog";
+import math from "./math";
 
 const app = express();
 const todd = new Dog("Todd", 2, "Labrador", "golden");
