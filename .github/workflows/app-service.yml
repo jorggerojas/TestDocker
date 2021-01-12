@@ -18,7 +18,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - run: npm ci
       - run: node app.js
         # env:
         #   # use mongodb for the host here because we have specified a container for the job.
