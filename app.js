@@ -1,6 +1,7 @@
 const express = require("express");
 const user = require("./user");
 const Dog = require("./dog");
+const math = require("./math");
 
 const app = express();
 const todd = new Dog("Todd", 2, "Labrador", "golden");
@@ -13,7 +14,7 @@ console.log(todd.present());
 console.log(todd.name);
 console.log(tobby.present());
 console.log(tobby.age);
-console.log(1 + 1);
+console.log(math([1, 2, 3]).add());
 console.log(JSON.stringify(user));
 console.log(user);
 
