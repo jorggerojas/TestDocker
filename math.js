@@ -1,8 +1,9 @@
-const math = (...args) => {
-  const add = () => {
+const math = {
+  add: (...args) => {
     var result = 0;
-    return args.map((num) => result + num);
-  };
+    args[0].forEach((num) => (result += parseInt(num)));
+    return result;
+  },
 };
 
 export default math;

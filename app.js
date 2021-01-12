@@ -1,21 +1,13 @@
-const express = require("express");
-const user = require("./user");
-const Dog = require("./dog");
-const math = require("./math");
+import user from "./user.js";
+import Dog from "./dog.js";
+import math from "./math.js";
 
-const app = express();
 const todd = new Dog("Todd", 2, "Labrador", "golden");
-const tobby = new Dog("Tobby", 2, "Chow chow", "black");
+const tobby = new Dog("Tobby", 13, "Chow chow", "black");
 
-app.get("/", (_, res) => {
-  res.json({ response: "OK" });
-});
+console.log(`*************** START LOGS ***************`);
 console.log(todd.present());
-console.log(todd.name);
 console.log(tobby.present());
-console.log(tobby.age);
-console.log(math([1, 2, 3]).add());
-console.log(JSON.stringify(user));
+console.log(math.add([1, 2, 3]));
 console.log(user);
-
-app.listen(80);
+console.log(`*************** END LOGS ***************`);
