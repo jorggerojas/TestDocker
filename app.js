@@ -10,7 +10,9 @@ app.get("/", (_, res) => {
   res.json({ response: "OK" });
 });
 console.log(todd.present());
+console.log(todd.name);
 console.log(tobby.present());
+console.log(tobby.age);
 console.log(1 + 1);
 console.log(JSON.stringify(user));
 console.log(user);
